@@ -1,6 +1,7 @@
 import { Activity, ChevronDown, ShieldCheck, Bell } from "lucide-react";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
+import { ComplianceAudit } from "@/components/xc/ComplianceAudit";
 
 export function TopBar() {
   return (
@@ -41,6 +42,8 @@ export function TopBar() {
         <span className="text-xs text-foreground/80">Online</span>
         <span className="num text-[10px] text-muted-foreground">· last 00:42</span>
       </div>
+
+      <ComplianceAudit />
 
       <Button size="icon" variant="ghost" className="h-9 w-9 text-muted-foreground">
         <Bell className="h-4 w-4" />
