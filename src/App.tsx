@@ -5,6 +5,12 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import YieldAnalytics from "./pages/YieldAnalytics.tsx";
+import AgentMandates from "./pages/AgentMandates.tsx";
+import Compliance from "./pages/Compliance.tsx";
+import Reports from "./pages/Reports.tsx";
+import Vault from "./pages/Vault.tsx";
+import Settings from "./pages/Settings.tsx";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +22,12 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/yield" element={<YieldAnalytics />} />
+          <Route path="/agents" element={<AgentMandates />} />
+          <Route path="/compliance" element={<Compliance />} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/vault" element={<Vault />} />
+          <Route path="/settings" element={<Settings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
