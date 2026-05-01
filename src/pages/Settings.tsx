@@ -50,7 +50,7 @@ export default function Settings() {
             <div className="flex items-center justify-between rounded-md border border-border bg-surface p-3">
               <div>
                 <div className="text-sm font-medium">Auto-Failover RPC</div>
-                <div className="text-[11px] text-muted-foreground">Switch to backup on >100ms latency</div>
+                <div className="text-[11px] text-muted-foreground">Switch to backup on &gt;100ms latency</div>
               </div>
               <Switch defaultChecked />
             </div>
